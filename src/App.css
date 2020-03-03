@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.btn {
+  width: 20vw;
+  height: 25vh;
+  font-size: 1.6vw;
+  margin-right: 6px;
+}
+.LowBtn {
+  width: 20vw;
+  height: 4vh;
+  font-size: 1.5vw;
+  margin-right: 6px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.timeblock {
+  margin-top: 2vh;
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+  height: 20vh;
+  width: 500vw;
+  background: beige;
+  border-radius: 3px;
+  border: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.time {
+  margin-left: 1vw;
+  width: 100vw;
+  height: 4vh;
+  font-size: 3vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  margin-top: 2vh;
+  vertical-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.closeBtn {
+  margin-top: 1vw;
+  width: 100vw;
+  height: 5vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.namePage {
+  padding: 5px;
+}
+
+.guest {
+  padding: 5px;
+  margin-left: 1vw;
+  font-size: 2vw;
+}
+
+.guestbox {
+  background-color: beige;
+  width: 90vw;
+  height: 60vh;
+  margin-left: 10px;
+  padding: 20px;
+}
+
+.paybtn {
+  width: 100vw;
+  height: 25vh;
+  font-size: 2vw;
+}
+
+.summ {
+  padding: 5vw;
+  font-size: 1.5vw;
+}
+
+.enterbtn {
+  margin: 5px 5px 5px 5px;
+  width: 30vw;
+  marginLeft: 5;
+  height: 6vh;
+  fontSize: 1.5vw;
 }
