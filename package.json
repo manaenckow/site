@@ -2,6 +2,8 @@
   "name": "rp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://manaenckow.github.io/site/",
+  "main": "index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
@@ -15,10 +17,12 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
+    "minideploy": "vk-miniapps-deploy",
+    "start": "cross-env PORT=8080 react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "ssl": "ssh -R 80:localhost:8080 ssh.localhost.run"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

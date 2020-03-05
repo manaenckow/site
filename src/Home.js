@@ -18,7 +18,12 @@ require('moment/locale/ru');
                   </div>
               </div>
               <div style={{ display: 'inline-flex', marginLeft: '2vw' }}>
-                  <button className='btn'>
+                  <button
+                      onClick={() => {
+                          props.go('trm');
+                      }}
+                      className='btn'
+                  >
                       Заселить
                   </button>
                   <button className='btn'>
@@ -36,7 +41,12 @@ require('moment/locale/ru');
                   </button>
               </div>
               <div style={{ marginLeft: '2vw', marginTop: '5px' }}>
-                  <button className='btn'>
+                  <button
+                      onClick={() => {
+                          props.go('schedule');
+                      }}
+                      className='btn'
+                  >
                       Расписание
                   </button>
                   <button
@@ -63,6 +73,14 @@ require('moment/locale/ru');
                       Печать Х отчета
                   </button>
               </div>
+              <button
+                  onClick={() => {
+                      props.go('db');
+                  }}
+                  className='bdbtn'
+              >
+                  Редактирование БД
+              </button>
           </div>
           </Panel>
       );

@@ -4,6 +4,9 @@ import './App.css';
 import Home from './Home.js';
 import ClosedOrders from './ClosedOrders.js';
 import Pay from './Pay.js';
+import ToRoom from './ToRoom.js';
+import Schedule from "./Schedule";
+import EditDB from "./EditDB";
 
 import { Epic, View } from '@vkontakte/vkui';
 
@@ -13,6 +16,31 @@ import { Epic, View } from '@vkontakte/vkui';
 
          this.state = {
              panel: 'home',
+             items: [
+                 {
+                     id: 0,
+                 name: '101',
+                 cost: '1200',
+                 count: '1',
+                 category: '2 местные номера'
+             },
+                 {
+                     id: 1,
+                     name: 'Нижний хостел',
+                     cost: '600',
+                     count: '10',
+                     category: 'Хостел'
+                 }],
+             clients: [{
+                 id: 0,
+                 name: 'Пётр Петров'
+             }],
+             workers: [{
+                 name: 'Илья Шонин',
+                 card: '123',
+                 pass: '1234',
+                 access: '4'
+             }]
          };
      }
 
@@ -37,6 +65,15 @@ import { Epic, View } from '@vkontakte/vkui';
              </View>
              <View id='pay' activePanel='pay'>
                  <Pay {...props} id='pay'/>
+             </View>
+             <View id='trm' activePanel='trm'>
+                 <ToRoom {...props} id='trm'/>
+             </View>
+             <View id='schedule' activePanel='schedule'>
+                 <Schedule {...props} id='schedule'/>
+             </View>
+             <View id='db' activePanel='db'>
+                 <EditDB {...props} id='db'/>
              </View>
          </Epic>
       );

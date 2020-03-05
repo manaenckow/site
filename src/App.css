@@ -37,6 +37,7 @@
   margin-top: 1vw;
   width: 100vw;
   height: 5vh;
+  font-size: 1.5vw;
 }
 
 .namePage {
@@ -73,5 +74,43 @@
   width: 30vw;
   marginLeft: 5;
   height: 6vh;
-  fontSize: 1.5vw;
+  font-size: 1.5vw;
+}
+
+.box50 {
+  padding: 5vw;
+    width: 50vw;
+    height: 30vh;
+  border: 1px solid #ccc; /* Параметры границы */
+   }
+
+.box50btn {
+  font-size: 1.5vw;
+  width: 40vw;
+  height: 5vh;
+  margin-bottom: 5vw;
+}
+
+.or {
+  background-color: #eec67d;
+}
+
+.inputstyle {
+  margin-top: 15vh;
+}
+.bdbtn {
+  font-size: 1.5vw;
+  width: 90vw;
+  height: 5vh;
+  margin: 1vw;
+}
+
+.title {
+  font-size: 2vw;
+}
+
+.subtitle {
+  padding: 1vw;
+  margin-left: 5vw;
+  margin-top: -0.5vh;
 }
